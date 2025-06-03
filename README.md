@@ -85,6 +85,9 @@ In this exercise you will:
    gcc -o solutions/getopt_flags solutions/getopt_flags.c
    ./solutions/getopt_flags -a -b
    ```
+  
+![Screenshot 2025-06-03 173031](https://github.com/user-attachments/assets/a603ecef-3f26-4dfb-81fb-a43aeb367ec1)
+
 
 ---
 
@@ -134,9 +137,18 @@ In this exercise you will:
 #### Reflection Questions
 
 1. **How do you pass a file name to a program using the `-i` and `-o` options?**
-2. **What are typical use cases for parameters versus flags? How do the differ from one another?**
 
----
+   -i XXX.txt  gibt an, welche Eingabedatei das Programm verwenden soll
+
+   -o XXX.txt  gibt an, wohin die Ausgabe geschrieben werden soll
+
+   Oder um die frage genauer zu beantworten um eine Datei zu implemetieren schreibe ich ledeglich -i davor.
+   
+3. **What are typical use cases for parameters versus flags? How do the differ from one another?**
+
+   Wärend Flags lediglich an und ab schalten, übergeben/inizieren/extrahieren eine Datei / Zahl oder Info die dahinter steht.  
+
+![Screenshot 2025-06-03 173453](https://github.com/user-attachments/assets/192373c6-1c62-45d6-871a-561d6532aaec)
 
 ### Task 3: Interactive Input with `scanf` & `fscanf`
 
@@ -188,7 +200,11 @@ In this exercise you will:
 
 * **Why is a run-to-completion (batch) approach often preferable to interactive input?**
 
----
+  Run-to-Completion ist effizienter, zuverlässiger und besser für Automatisierung. Interaktive Eingabe eignet sich nur für kleine Tests oder Lernzwecke.
+
+![Screenshot 2025-06-03 175726](https://github.com/user-attachments/assets/15ac2f1f-ee1a-4189-b55b-1d9910dad83f)
+
+
 
 ### Task 4: Input Redirection from STDIN
 
@@ -218,6 +234,13 @@ In this exercise you will:
 #### Reflection Question
 
 * **What is the difference between redirecting to stdin and explicitly opening a file with `fopen`?**
+
+  stdin-Umleitung ist bequem und ideal für einfache Datenübergabe.
+  
+  fopen() ist notwendig, wenn dein Programm gezielt mit Dateien arbeiten oder mehrere Dateien verarbeiten soll.
+
+![Screenshot 2025-06-03 181225](https://github.com/user-attachments/assets/7436b529-d593-4ad7-a382-3991e36b7024)
+
 
 ---
 
@@ -311,6 +334,9 @@ In this exercise you will:
    ./solutions/caesar -e 3 -i input.txt -o enc.txt
    ./solutions/caesar -d 3 -i enc.txt -o dec.txt
    ```
+
+![Screenshot 2025-06-03 182714](https://github.com/user-attachments/assets/a59fb2e4-389a-48f2-9b11-ec251b020eb0)
+
 
 #### 5.2 Prototype Asymmetric XOR Cipher
 
@@ -409,6 +435,11 @@ In this exercise you will:
 
 * **Explain in your own words what the encryption and decryption processes are doing in both ciphers.**
 
----
+  Eigentlich ist es Fast das selbe das eine chiffriert im Aski Code wärend der andere ins binäre chiffriert.
+
+  Mann soll wohl daher einfach zwischen diesen Methoden wechseln können.
+
+![Screenshot 2025-06-03 184002](https://github.com/user-attachments/assets/9441e138-69ed-491b-b600-cfdf3250f5b5)
+
 
 **Remember:** Stop after **90 minutes** and record where you stopped.
